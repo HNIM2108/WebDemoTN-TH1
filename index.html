@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Thi Trắc Nghiệm Demo</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Web thi trắc nghiệm</h1>
+        <form id="quizForm">
+            <!-- Thông tin người dùng -->
+            <label for="fullName">Họ và Tên:</label>
+            <input type="text" id="fullName" required>
+            
+            <label for="dob">Ngày Tháng Năm Sinh:</label>
+            <input type="date" id="dob" required>
+
+            <label for="studentID">Mã Sinh Viên:</label>
+            <input type="text" id="studentID" required>
+
+            <label for="class">Lớp:</label>
+            <input type="text" id="class" required>
+
+            <!-- Câu hỏi -->
+            <h2>Câu Hỏi</h2>
+            <!--Đúng/Sai-->
+            <fieldset>
+                <legend id="q1">Câu 1: 1+1=2?</legend>
+                <input type="radio" name="c1" value="Đúng">Đúng
+                <input type="radio" name="c1" value="Sai">Sai
+            </fieldset>
+            <fieldset>
+                <legend>Câu 2: Tia chớp được nhìn thấy trước khi nó được nghe thấy vì ánh sáng truyền nhanh hơn âm thanh?</legend>
+                <input type="radio" name="c2" value="Đúng">Đúng
+                <input type="radio" name="c2" value="Sai">Sai
+            </fieldset>
+            <fieldset>
+                <legend>Câu 3: Thành phố Vatican là một quốc gia?</legend>
+                <input type="radio" name="c3" value="Đúng">Đúng
+                <input type="radio" name="c3" value="Sai">Sai
+            </fieldset>
+            <fieldset>
+                <legend>Câu 4: Melbourne là thủ đô của Úc?</legend>
+                <input type="radio" name="c4" value="Đúng">Đúng
+                <input type="radio" name="c4" value="Sai">Sai
+            </fieldset>
+            <fieldset>
+                <legend>Câu 5: Penicillin được phát hiện ở Việt Nam để điều trị bệnh sốt rét?</legend>
+                <input type="radio" name="c5" value="Đúng">Đúng
+                <input type="radio" name="c5" value="Sai">Sai
+            </fieldset>
+            <fieldset>
+                <legend>Câu 6: Núi Phú Sĩ là ngọn núi cao nhất ở Nhật Bản?</legend>
+                <input type="radio" name="c6" value="Đúng">Đúng
+                <input type="radio" name="c6" value="Sai">Sai
+            </fieldset>
+            <fieldset>
+                <legend>Câu 7: Bông cải xanh chứa nhiều vitamin C hơn chanh?</legend>
+                <input type="radio" name="c7" value="Đúng">Đúng
+                <input type="radio" name="c7" value="Sai">Sai
+            </fieldset>
+            <fieldset>
+                <legend>Câu 8: Hộp sọ là xương chắc nhất trong cơ thể con người?</legend>
+                <input type="radio" name="c8" value="Đúng">Đúng
+                <input type="radio" name="c8" value="Sai">Sai
+            </fieldset>
+            <fieldset>
+                <legend>Câu 9: Bóng đèn là phát minh của Thomas Edison?</legend>
+                <input type="radio" name="c9" value="Đúng">Đúng
+                <input type="radio" name="c9" value="Sai">Sai
+            </fieldset>
+            <fieldset>
+                <legend>Câu 10: Google ban đầu được gọi là BackRub?</legend>
+                <input type="radio" name="c10" value="Đúng">Đúng
+                <input type="radio" name="c10" value="Sai">Sai
+            </fieldset>
+            <!--1 trong 4-->
+            <fieldset>
+                <legend>Câu 11: Có bao nhiêu số có một chữ số?</legend>
+                <input type="radio" name="c11" value="a">10
+                <input type="radio" name="c11" value="b">9
+                <input type="radio" name="c11" value="c">8
+                <input type="radio" name="c11" value="d">90
+            </fieldset>
+            <fieldset>
+                <legend>Câu 12: Số liền trước số lớn nhất có một chữ số là số?</legend>
+                <input type="radio" name="c12" value="a">8
+                <input type="radio" name="c12" value="b">9
+                <input type="radio" name="c12" value="c">10
+                <input type="radio" name="c12" value="d">11
+            </fieldset>
+            <fieldset>
+                <legend>Câu 13: Số liền sau số lớn nhất có hai chữ số là số?</legend>
+                <input type="radio" name="c13" value="a">10
+                <input type="radio" name="c13" value="b">9
+                <input type="radio" name="c13" value="c">99
+                <input type="radio" name="c13" value="d">100
+            </fieldset>
+            <fieldset>
+                <legend>Câu 14: Số ở giữa số 25 và 27 là số?</legend>
+                <input type="radio" name="c14" value="a">10
+                <input type="radio" name="c14" value="b">28
+                <input type="radio" name="c14" value="c">24
+                <input type="radio" name="c14" value="d">26
+            </fieldset>
+            <fieldset>
+                <legend>Câu 15: Kết quả của phép tính 56 + 13 – 30 =?</legend>
+                <input type="radio" name="c15" value="a">29
+                <input type="radio" name="c15" value="b">39
+                <input type="radio" name="c15" value="c">49
+                <input type="radio" name="c15" value="d">59
+            </fieldset>
+            <fieldset>
+                <legend>Câu 16: Số điền vào chỗ chấm trong phép tính ...+15 – 20 = 37 là?</legend>
+                <input type="radio" name="c16" value="a">37
+                <input type="radio" name="c16" value="b">40
+                <input type="radio" name="c16" value="c">42
+                <input type="radio" name="c16" value="d">49
+            </fieldset>
+            <fieldset>
+                <legend>Câu 17: Nhà bà có tất cả 64 quả bưởi và na, trong đó số quả na là 24, vậy số quả bưởi là?</legend>
+                <input type="radio" name="c17" value="a">88
+                <input type="radio" name="c17" value="b">40
+                <input type="radio" name="c17" value="c">24
+                <input type="radio" name="c17" value="d">90
+            </fieldset>
+            <fieldset>
+                <legend>Câu 18: Số 45 là số liền sau số?</legend>
+                <input type="radio" name="c18" value="a">40
+                <input type="radio" name="c18" value="b">44
+                <input type="radio" name="c18" value="c">46
+                <input type="radio" name="c18" value="d">50
+            </fieldset>
+            <fieldset>
+                <legend>Câu 19: Hà có 35 lá cờ, Hà cho An 5 lá cờ và cho Lan 10 lá cờ, số lá cờ Hà còn lại?</legend>
+                <input type="radio" name="c19" value="a">30
+                <input type="radio" name="c19" value="b">25
+                <input type="radio" name="c19" value="c">20
+                <input type="radio" name="c19" value="d">15
+            </fieldset>
+            <fieldset>
+                <legend>Câu 20: Số liền sau số bé nhất có hai chữ số là?</legend>
+                <input type="radio" name="c20" value="a">10
+                <input type="radio" name="c20" value="b">9
+                <input type="radio" name="c20" value="c">11
+                <input type="radio" name="c20" value="d">12
+            </fieldset>
+            <!--Nhiều đáp án-->
+            <fieldset>
+                <legend>Câu 21: Đâu là những con vật thuộc 12 con giáp?</legend>
+                <input type="checkbox" name="c21" value="a">Rồng
+                <input type="checkbox" name="c21" value="b">Kiến
+                <input type="checkbox" name="c21" value="c">Dê
+                <input type="checkbox" name="c21" value="d">Voi
+            </fieldset>
+            <fieldset>
+                <legend>Câu 22: Những số nào có 2 chữ số?</legend>
+                <input type="checkbox" name="c22" value="a">18
+                <input type="checkbox" name="c22" value="b">12
+                <input type="checkbox" name="c22" value="c">1111
+                <input type="checkbox" name="c22" value="d">23
+            </fieldset>
+            <fieldset>
+                <legend>Câu 23: Đâu là tên một hãng điện thoại?</legend>
+                <input type="checkbox" name="c23" value="a">iPhone
+                <input type="checkbox" name="c23" value="b">myPhoneee
+                <input type="checkbox" name="c23" value="c">SamLoc
+                <input type="checkbox" name="c23" value="d">SamSung
+            </fieldset>
+            <fieldset>
+                <legend>Câu 24: Phép chia cho số âm sẽ trả kết quả là số?</legend>
+                <div><input type="checkbox" name="c24" value="a">Âm, nếu số bị chia là số Âm</div>
+                <div><input type="checkbox" name="c24" value="b">Dương, nếu số bị chia là số Âm</div>
+                <div><input type="checkbox" name="c24" value="c">Âm, nếu số bị chia là số Dương</div>
+                <div><input type="checkbox" name="c24" value="d">Dương, nếu số bị chia là số Dương</div>
+            </fieldset>
+            <fieldset>
+                <legend>Câu 25: Đâu là những số chính phương?</legend>
+                <input type="checkbox" name="c25" value="a">9
+                <input type="checkbox" name="c25" value="b">10
+                <input type="checkbox" name="c25" value="c">99
+                <input type="checkbox" name="c25" value="d">100
+            </fieldset>
+            <fieldset>
+                <legend>Câu 26: Đâu là tên của 1 đại dương?</legend>
+                <input type="checkbox" name="c26" value="a">Thái Hành Dương
+                <input type="checkbox" name="c26" value="b">Đại Tây Dương
+                <input type="checkbox" name="c26" value="c">Đông Dương
+                <input type="checkbox" name="c26" value="d">Bắc Băng Dương
+            </fieldset>
+            <fieldset>
+                <legend>Câu 27: Đâu là một loài thú?</legend>
+                <input type="checkbox" name="c27" value="a">Người
+                <input type="checkbox" name="c27" value="b">Lợn
+                <input type="checkbox" name="c27" value="c">Gà 
+                <input type="checkbox" name="c27" value="d">Voi
+            </fieldset>
+            <fieldset>
+                <legend>Câu 28: Đâu là tên của một mạng xã hội?</legend>
+                <input type="checkbox" name="c28" value="a">Windows
+                <input type="checkbox" name="c28" value="b">Lotus
+                <input type="checkbox" name="c28" value="c">YouTube
+                <input type="checkbox" name="c28" value="d">Nokia
+            </fieldset>
+            <fieldset>
+                <legend>Câu 29: Đâu là thứ có thể dùng để dập lửa?</legend>
+                <input type="checkbox" name="c29" value="a">Nước
+                <input type="checkbox" name="c29" value="b">Dầu
+                <input type="checkbox" name="c29" value="c">Xăng
+                <input type="checkbox" name="c29" value="d">Củi
+            </fieldset>
+            <fieldset>
+                <legend>Câu 30: Đâu là tên của một hãng PC?</legend>
+                <input type="checkbox" name="c30" value="a">Dell
+                <input type="checkbox" name="c30" value="b">Lenovo
+                <input type="checkbox" name="c30" value="c">ASUS
+                <input type="checkbox" name="c30" value="d">ThinkPad
+            </fieldset>
+            <fieldset>
+                <legend>Câu 31: Thủ tướng Vương quốc Anh từ năm 1841 đến năm 1846 là ai?</legend>
+                <input type="text" id="c31">
+            </fieldset>
+            <fieldset>
+                <legend>Câu 32: Ký hiệu hóa học cho bạc là gì??</legend>
+                <input type="text" id="c32">
+            </fieldset>
+            <fieldset>
+                <legend>Câu 33: Ai đã phát minh ra Mắt mèo vào năm 1934 để cải thiện an toàn đường bộ?</legend>
+                <input type="text" id="c33">
+            </fieldset>
+            <fieldset>
+                <legend>Câu 34: Loài chim nhỏ nhất thế giới là gì?</legend>
+                <input type="text" id="c34">
+            </fieldset>
+            <fieldset>
+                <legend>Câu 35: Ai đã chơi 'Bodie' và 'Doyle' trong The Professionals?</legend>
+                <input type="text" id="c35">
+            </fieldset>
+            <fieldset>
+                <legend>Câu 36: Búp bê Barbie, tên đầy đủ là gì?</legend>
+                <input type="text" id="c36">
+            </fieldset>
+            <fieldset>
+                <legend>Câu 37: Paul Hunn giữ kỷ lục gì, đăng ký ở mức 118.1 decibel?</legend>
+                <input type="text" id="c37">
+            </fieldset>
+            <fieldset>
+                <legend>Câu 38: Danh thiếp của Al Capone nói gì về nghề nghiệp của anh ta?</legend>
+                <input type="text" id="c38">
+            </fieldset>
+            <fieldset>
+                <legend>Câu 39: Tuổi thọ của chuồn chuồn là gì?</legend>
+                <input type="text" id="c39">
+            </fieldset>
+            <fieldset>
+                <legend>Câu 40: Chiếc xe tải Tonka đầu tiên được sản xuất vào năm nào - 1945, 1947 hay 1949?</legend>
+                <input type="text" id="c40">
+            </fieldset>
+
+            <!-- Nút submit -->
+            <button type="button" onclick="submitQuiz()">Submit</button>
+        </form>
+
+        <!-- Kết quả -->
+        <div id="result" style="display: none;">
+            <h2>Kết Quả</h2>
+            <!-- Hiển thị kết quả ở đây -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
